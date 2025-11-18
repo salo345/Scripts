@@ -1,12 +1,11 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Solo-Library-ui-refs-heads-main/refs/heads/main/solo-V5-remake/menu.luau"))()
 
+Library:SetUIScale(1.0)
 
-local AFKOptions = {}
-
-local Window = redzlib:MakeWindow({
-  Title = "solo Hub : Blox Fruits",
+local Window = Library:MakeWindow({
+  Title = "Solo Hub : Bloxfruit",
   SubTitle = "by solo3333",
-  SaveFolder = "solbreack | redz lib v5.lua"
+  ScriptFolder = "redz-library-V5"
 })
 
 local Minimizer = Window:NewMinimizer({
@@ -23,11 +22,15 @@ local MobileButton = Minimizer:CreateMobileMinimizer({
 local Discord = Window:MakeTab({"Discord", "Info"})
 
 Discord:AddDiscordInvite({
-  Name = "solo Hub | Community",
-  Description = "Join our discord community to receive information about the next update",
-  Logo = "rbxassetid://15298567397",
-  Invite = "https://discord.gg/7aR7kNVt4g"
+	Title = "solo Hub | Community",
+	Description = "A community for redz Hub Users -- official scripts, updates, and suport in one place.",
+	Banner = "rbxassetid://17382040552", -- You can put an RGB Color: Color3.fromRGB(233, 37, 69)
+	Logo = "rbxassetid://17382040552",
+	Invite = "https://discord.gg/redz-hub",
+	Members = 470000, -- Optional
+	Online = 20000, -- Optional
 })
+
 --end discord
 
 local QuestsTabs = Window:MakeTab({"Quests/Items", "Swords"})
