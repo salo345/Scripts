@@ -1,14 +1,13 @@
-# redz hub
-- **REDZ HUB** is just a script for automations
+# solo hub
+- **SOLO HUB** is just a script for automations
 - the script is safe, **KEYLESS** and **FREE** for everyone. made for everyone to get the most out of it
 
 ## Working on
 - Blox Fruits
-- Meme Sea
 
 ### global load
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/main.lua"))()
 ```
 
 - Blox Fruits
@@ -18,5 +17,5 @@ local Settings = {
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/main.lua"))(Settings)
 ```
