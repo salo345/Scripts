@@ -17,5 +17,5 @@ local Settings = {
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/main.lua"))(Settings)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/menu.lua"))(Settings)
 ```
