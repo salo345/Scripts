@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Solo-Library-ui-refs-heads-main/refs/heads/main/solo-V5-remake/main.luau"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/redz-V5-remake/main.luau"))()
 
 Library:SetUIScale(1.0)
 
