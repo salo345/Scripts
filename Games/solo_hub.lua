@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Solo-Library-ui-refs-heads-main/refs/heads/main/solo-V5-remake/main.luau"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Solo-Library-ui-refs-heads-main/refs/heads/main/solo-V5-remake/menu.luau"))()
 
 
 local AFKOptions = {}
@@ -9,11 +9,14 @@ local Window = redzlib:MakeWindow({
   SaveFolder = "solbreack | redz lib v5.lua"
 })
 
-Window:AddMinimizeButton({
-  Button = { Image = "rbxassetid://15298567397", BackgroundTransparency = 0 },
-  Corner = { CornerRadius = UDim.new(0.01, 0.01) },
+local Minimizer = Window:NewMinimizer({
+  KeyCode = Enum.KeyCode.LeftControl
 })
 
+local MobileButton = Minimizer:CreateMobileMinimizer({
+  Image = "rbxassetid://15298567397",
+  BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+})
 
 --discord--
 
