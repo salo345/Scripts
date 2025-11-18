@@ -47,7 +47,7 @@ do
 			SettingsCode = "unpack(game:GetService('HttpService'):JSONDecode('" .. EncodedSettings .. "'))"
 		end
 		
-		local SourceCode = ("loadstring(game:HttpGet('%smain.luau'))(%s)"):format(urls.Repository, SettingsCode)
+		local SourceCode = ("loadstring(game:HttpGet('%smain.lua'))(%s)"):format(urls.Repository, SettingsCode)
 		
 		if BETA_VERSION then
 			SourceCode = "getgenv().BETA_VERSION=true;" .. SourceCode
