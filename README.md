@@ -7,7 +7,7 @@
 
 ### global load
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Scripts/refs/heads/main/menu.luau"))()
 ```
 
 - Blox Fruits
