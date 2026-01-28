@@ -1,4 +1,13 @@
-local sololib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/redz-V5-remake/main.luau"))()
+local sololib = loadstring(game:HttpGet("https://raw.githubusercontent.com/salo345/Solo-Library-ui-refs-heads-main/refs/heads/main/Solohubui.lua"))()
+
+if game.PlaceId == 2753915549 then
+	Sea1 = true;
+elseif game.PlaceId == 4442272183 then
+	Sea2 = true;
+elseif game.PlaceId == 7449423635 then
+	Sea3 = true;
+end;
+
 
 local Window = redzlib:MakeWindow({
   Title = "Solo Hub : Blox Fruits",
@@ -13,16 +22,29 @@ Window:AddMinimizeButton({
 
 local Discord = Window:MakeTab({"Discord", "Info"})
 
-Tab1:AddDiscordInvite({
-    Name = "Name Hub",
-    Description = "Join server",
-    Logo = "rbxassetid://18751483361",
-    Invite = "Link discord invite",
+Discord:AddDiscordInvite({
+   Name = "redz Hub | Community",
+   Description = "Join our discord community to receive information about the next update",
+   Logo = "rbxassetid://15298567397",
+   Invite = "https://discord.gg/7aR7kNVt4g"
 })
 
-Window:SelectTab(Tab1)
+local MainFarm = Window:MakeTab({"Farm", "Home"})
 
-local Section = Tab1:AddSection({"Section"})
+
+if Sea3 then
+   local AutoSea = Window:MakeTab({"Sea", "Waves"})
+   AutoSea:AddSection({"Kitsune"})
+   local KILabel = AutoSea:AddParagraph({"Kitsune Island : not spawn"})
+   AutoSea:AddToggle({Name = "Auto Kitsune Island",Callback = function(Value)
+     getgenv().AutoKitsuneIsland = Value;AutoKitsuneIsland()
+   end})
+   AutoSea:AddToggle({Name = "Auto Trade Azure Ember",Callback = function(Value)
+     getgenv().TradeAzureEmber = Value
+     task.spawn(function()
+       local Modules = ReplicatedStorage:WaitForChild("Modules", 9e9)
+       local Net = Modules:WaitForChild("Net", 9e9)
+       local KitsuneRemote = Net:WaitForChild("RF/KitsuneStatuePray", 9e9)
 
 local Paragraph = Tab1:AddParagraph({"Paragraph", "This is a Paragraph\nSecond Line"})
 
